@@ -22,14 +22,14 @@ const Steps = () => {
           <div className="card-row-steps">
             <div className="card-steps" data-aos="fade-up">
               <div className="card-image-steps">
-                <img src="https://argon-one.vercel.app/image-11.webp" alt="" />
+                <img src="https://argon-one.vercel.app/image 11.webp" alt="" />
               </div>
               <div className="stepno font-bold">STEP 1</div>
               <div className="card-text">CHOOSE YOUR PRODUCT</div>
             </div>
             <div className="card-steps" data-aos="fade-up">
               <div className="card-image-steps">
-                <img src="https://argon-one.vercel.app/image-13.webp" alt="" />
+                <img src="https://argon-one.vercel.app/image 13.webp" alt="" />
               </div>
               <div className="stepno font-bold">STEP 2</div>
               <div className="card-text">CHECKOUT NOW</div>
@@ -38,7 +38,7 @@ const Steps = () => {
           <div className="card-row-steps">
             <div className="card-steps" data-aos="fade-up">
               <div className="card-image-steps">
-                <img src="https://argon-one.vercel.app/image-14.webp" alt="" />
+                <img src="https://argon-one.vercel.app/image 14.webp" alt="" />
               </div>
               <div className="stepno font-bold">STEP 3</div>
               <div className="card-text">PURCHASE & INSTRUCTIONS</div>
