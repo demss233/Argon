@@ -38,6 +38,16 @@ form input {
   border-radius: 6px;
 }
 
+.form input::after {
+    position: absolute;
+    top: -4px; bottom: -4px;
+    left: -4px; right: -4px;
+    background: linear-gradient(to right, #7612c4, #fc7070);
+    content: '';
+    z-index: -1;
+    border-radius: 16px;
+}
+
 form input:focus {
   outline: none;
 }
