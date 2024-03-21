@@ -8,7 +8,7 @@ import styles from "./Shop.css";
 const Shop = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 700,
     });
   }, []);
   return (
