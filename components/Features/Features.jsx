@@ -8,7 +8,7 @@ import styles from "./Features.css";
 const Features = () => {
   useEffect(() => {
     AOS.init({
-      duration: 400,
+      duration: 700,
     });
   }, []);
   return (
