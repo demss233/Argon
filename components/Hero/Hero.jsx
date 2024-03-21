@@ -8,7 +8,7 @@ import styles from "./Hero.css";
 const Hero = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 700,
     });
   }, []);
 
