@@ -9,7 +9,7 @@ import { useState } from "react";
 const FAQ = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 700,
     });
   }, []);
   let [isQuestion1Open, setisQuestion1Open] = useState(0);
