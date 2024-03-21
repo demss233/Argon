@@ -35,7 +35,8 @@ form input {
   border: 2px solid transparent;
   border-image: linear-gradient(to right, #7612c4, #fc7070);
   border-image-slice: 1;
-  border-radius: 6px;
+  border-radius: 10px;
+  background: linear-gradient(#0d0d0d, #0d0d0d) padding-box, linear-gradient(90deg, #7612c4, #fc7070) border-box;
 }
 
 .form input::after {
@@ -61,6 +62,8 @@ form textarea {
   border-image: linear-gradient(to right, #7612c4, #fc7070);
   border-image-slice: 1;
   border-radius: 20px;
+  border-radius: 10px;
+  background: linear-gradient(#0d0d0d, #0d0d0d) padding-box, linear-gradient(90deg, #7612c4, #fc7070) border-box;
 }
 
 form textarea:focus {
