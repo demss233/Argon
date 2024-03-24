@@ -11,6 +11,15 @@ const Shop = () => {
       duration: 700,
     });
   }, []);
+
+  function redirectToProduct1() {
+    window.location.href = "/products/fortnite_public";
+  }
+
+  function redirectToProduct2() {
+    window.location.href = "/products/perm_spoofer";
+  }
+
   return (
     <>
       <div className="shop mx-auto gap-7">
@@ -23,13 +32,17 @@ const Shop = () => {
             <div className="productImage">
               <img src="https://argon-one.vercel.app/image 7.webp" alt="" />
             </div>
-            <button className="purchase">Purchase</button>
+            <button className="purchase" onClick={redirectToProduct1}>
+              Purchase
+            </button>
           </div>
           <div className="product" data-aos="fade-up">
             <div className="productImage">
               <img src="https://argon-one.vercel.app/image 8.webp" alt="" />
             </div>
-            <button className="purchase">Purchase</button>
+            <button className="purchase" onClick={redirectToProduct2}>
+              Purchase
+            </button>
           </div>
         </div>
       </div>

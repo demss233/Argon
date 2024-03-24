@@ -36,7 +36,14 @@ const Hero = () => {
           </div>
           <div className="hero-buttons text-white flex gap-7">
             <button className="discord">Discord</button>
-            <button className="shop-now">Shop Now</button>
+            <button
+              className="shop-now"
+              onClick={() => {
+                window.location.href = "/products";
+              }}
+            >
+              Shop Now
+            </button>
           </div>
         </div>
         <div className="hero-image">

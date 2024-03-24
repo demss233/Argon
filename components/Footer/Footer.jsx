@@ -4,7 +4,7 @@ import styles from "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <div className="footer">
+      <div className="footer" data-aos="fade-in">
         <div className="footer-left flex flex-col gap-2">
           <div className="main">
             <h1>Argon Software</h1>

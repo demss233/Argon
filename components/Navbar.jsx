@@ -24,18 +24,25 @@ export default function Navbar() {
               className={`list flex items-center ${isOpen ? "list-resp" : ""}`}
             >
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">Products</a>
+                <a href="/products">Products</a>
               </li>
               <li>
-                <a href="#">Features</a>
+                <a href="#feature">Features</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
-              <button className="get-started btn-h">Get Started</button>
+              <button
+                className="get-started btn-h"
+                onClick={() => {
+                  window.location.href = "/products";
+                }}
+              >
+                Get Started
+              </button>
               <li></li>
             </ul>
           </div>

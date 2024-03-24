@@ -11,9 +11,10 @@ const Features = () => {
       duration: 700,
     });
   }, []);
+
   return (
     <>
-      <div className="features mx-auto">
+      <div className="features mx-auto" id="feature">
         <div className="sectionHeading" data-aos="fade-in">
           <p>WHY CHOOSE US ?</p>
           <h1 className="gradient font-bold">FEATURES</h1>
