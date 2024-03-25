@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import React from "react";
 import styles from "./Product.css";
 
+// imported the checkout function @/checkout.
+import { checkout } from "@/checkout";
+
 const Product = () => {
   useEffect(() => {
     AOS.init({
@@ -33,10 +36,66 @@ const Product = () => {
             </p>
           </div>
           <div className="buying-options flex gap-6">
-            <button className="option">1 Day</button>
-            <button className="option">1 Week</button>
-            <button className="option">1 Month</button>
-            <button className="option">Lifetime</button>
+            <button
+              className="option"
+              onClick={() => {
+                checkout({
+                  items: [
+                    {
+                      price: "paste the product link",
+                      quantity: 1,
+                    },
+                  ],
+                });
+              }}
+            >
+              1 Day
+            </button>
+            <button
+              className="option"
+              onClick={() => {
+                checkout({
+                  items: [
+                    {
+                      price: "paste the product link",
+                      quantity: 1,
+                    },
+                  ],
+                });
+              }}
+            >
+              1 Week
+            </button>
+            <button
+              className="option"
+              onClick={() => {
+                checkout({
+                  items: [
+                    {
+                      price: "paste the product link",
+                      quantity: 1,
+                    },
+                  ],
+                });
+              }}
+            >
+              1 Month
+            </button>
+            <button
+              className="option"
+              onClick={() => {
+                checkout({
+                  items: [
+                    {
+                      price: "paste the product link",
+                      quantity: 1,
+                    },
+                  ],
+                });
+              }}
+            >
+              Lifetime
+            </button>
           </div>
         </div>
       </div>

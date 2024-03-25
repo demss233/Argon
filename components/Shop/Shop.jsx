@@ -22,7 +22,7 @@ const Shop = () => {
 
   return (
     <>
-      <div className="shop mx-auto gap-7">
+      <div className="shop mx-auto gap-7" id="shop">
         <div className="sectionHeading" data-aos="fade-in">
           <p>WE WILL HELP YOU</p>
           <h1 className="gradient font-bold">READY TO WIN ? </h1>

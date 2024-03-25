@@ -8,8 +8,12 @@ export default function Navbar() {
 
   function handleMenu() {
     let bitwise = isOpen ^ 1;
-    console.log(bitwise);
+    // console.log(bitwise);  for debugging purposes.
     setIsOpen(bitwise);
+  }
+
+  function handleClickNavbar() {
+    window.location.href = "#shop";
   }
 
   return (
@@ -17,7 +21,13 @@ export default function Navbar() {
       <nav className="navbar flex justify-between items-center mx-auto">
         <div className="navbar-left flex items-center">
           <div className="navbar-brand cursor-pointer">
-            <img src="https://argon-one.vercel.app/loo.webp" alt="" />
+            <img
+              src="https://argon-one.vercel.app/loo.webp"
+              alt=""
+              onClick={() => {
+                window.location.href = "/";
+              }}
+            />
           </div>
           <div className="navbar-links">
             <ul
@@ -35,20 +45,16 @@ export default function Navbar() {
               <li>
                 <a href="#contact">Contact</a>
               </li>
-              <button
-                className="get-started btn-h"
-                onClick={() => {
-                  window.location.href = "/products";
-                }}
-              >
+              <button className="get-started btn-h" onClick={handleClickNavbar}>
                 Get Started
               </button>
-              <li></li>
             </ul>
           </div>
         </div>
         <div className="navbar-right">
-          <button className="get-started btn-hh">Get Started</button>
+          <button className="get-started btn-hh" onClick={handleClickNavbar}>
+            Get Started
+          </button>
           <div className="hamburger" onClick={handleMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +66,6 @@ export default function Navbar() {
             >
               <g
                 fill="#51018f"
-                fill-rule="nonzero"
                 stroke="none"
                 stroke-width="1"
                 stroke-linecap="butt"

@@ -57,7 +57,6 @@ const Hero = () => {
           ></video>
         </div>
       </div>
-      <div className="scroll">scroll</div>
     </>
   );
 };
