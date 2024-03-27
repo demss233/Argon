@@ -26,11 +26,11 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: #ebe9e9;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .product-detail {
-  margin-top: 40px;
+  margin-top: 24px;
   color: #ebe9e9;
   opacity: 95%;
 }
@@ -50,11 +50,6 @@
   transition: 0.7s all cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.option:hover {
-  background-color: white;
-  color: #5a10bf;
-}
-
 @media only screen and (max-width: 1014px) {
   .product-container {
     flex-direction: column;
@@ -62,6 +57,11 @@
     justify-content: center;
   }
   .buying-options {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .final-btn-container {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -85,4 +85,38 @@
   .product-container {
     width: 95%;
   }
+}
+
+.svg-stripe {
+  width: 55px;
+  height: 45px;
+}
+
+.svg-hoodpay {
+  width: 100px;
+  height: 50px;
+}
+
+.final-btn-container {
+  color: white;
+  font-weight: bold;
+}
+
+.final-btn-container button {
+  background-color: #3a0c76;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.show {
+  opacity: 1;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.selected {
+  background-color: white;
+  color: #5a10bf;
 }
