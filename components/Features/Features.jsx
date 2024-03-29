@@ -8,14 +8,14 @@ import styles from "./Features.css";
 const Features = () => {
   useEffect(() => {
     AOS.init({
-      duration: 700,
+      duration: 300,
     });
   }, []);
 
   return (
     <>
       <div className="features mx-auto" id="feature">
-        <div className="sectionHeading" data-aos="fade-in">
+        <div className="sectionHeading">
           <p>WHY CHOOSE US ?</p>
           <h1 className="gradient font-bold">FEATURES</h1>
         </div>

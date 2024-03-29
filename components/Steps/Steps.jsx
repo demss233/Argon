@@ -8,7 +8,7 @@ import styles from "./Steps.css";
 const Steps = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 300,
     });
   }, []);
   return (

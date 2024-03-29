@@ -1,13 +1,15 @@
 /* ! <Navbar> */
 
 .navbar {
-  margin-top: 27px;
+  padding: 30px;
   width: 90%;
 }
 
 .list a {
   margin-left: 36px;
   color: white;
+  font-weight: 400;
+  font-size: 22px;
   transition: 0.7s all;
 }
 
@@ -26,12 +28,12 @@
   height: 50px;
   background: #5a10bf;
   transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) all;
-  border-radius: 13px;
+  border-radius: 3px;
   color: white;
 }
 
 .get-started:hover {
-  opacity: 0.5;
+  opacity: 0.83;
 }
 
 .hamburger {
@@ -46,7 +48,7 @@
 
 /* ? Media Queries */
 
-@media only screen and (max-width: 785px) {
+@media only screen and (max-width: 981px) {
   .navbar {
     margin: 0;
     padding: 20px;
@@ -54,10 +56,10 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgb(14, 14, 14);
+    background-color: rgb(6, 6, 6);
     z-index: 100;
-    /* background-color: rgba(0, 0, 0, 0.3); */
     gap: 0px;
+    transition: 0.4s all ease;
   }
   .list {
     display: none;

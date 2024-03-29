@@ -8,7 +8,7 @@ import styles from "./Hero.css";
 const Hero = () => {
   useEffect(() => {
     AOS.init({
-      duration: 700,
+      duration: 250,
     });
   }, []);
 
@@ -21,10 +21,10 @@ const Hero = () => {
         <div className="hero-texts flex flex-col">
           <div className="hero-header">
             <div className="header-p">
-              <p>The best in the game</p>
+              <p>The Best in the game</p>
             </div>
-            <h1 className="text-5xl font-bold">
-              WELCOME TO <span className="gradient">ARGON SOFTWARE</span>
+            <h1 className="text-7xl font-bold">
+              WELCOME TO <br/><span className="gradient">ARGON SOFTWARE</span>
             </h1>
           </div>
           <div className="hero-para">
@@ -53,7 +53,7 @@ const Hero = () => {
             muted
             loop
             width={750}
-            style={{ border: "none", borderRadius: "18px" }}
+            style={{ border: "none", borderRadius: "8px" }}
           ></video>
         </div>
       </div>

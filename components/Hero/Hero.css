@@ -20,7 +20,7 @@
 }
 
 .gradient {
-  background: linear-gradient(#7612c4, #fc7070);
+  background: linear-gradient(0% #7612c4,50% #fc7070,100% #c171ff);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -57,8 +57,8 @@
   width: 130px;
   height: 50px;
   background-color: #5a10bf;
-  border-radius: 13px;
-  transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) all;
+  border-radius: 3px;
+  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) all;
 }
 
 .shop-now {
@@ -66,22 +66,23 @@
   height: 50px;
   background: none;
   border: 2px solid #5a10bf;
-  border-radius: 13px;
-  transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) all;
+  border-radius: 3px;
+  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) all;
 }
 
 .discord:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .shop-now:hover {
-  background-color: #5a10bf;
+  background-color: #5910bf78;
 }
 
 .hero-image img {
   border-bottom: 10px solid #51018f;
-  border-radius: 18px;
+  border-radius: 8px;
 }
+
 
 /* ! <Hero /> */
 

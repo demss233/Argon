@@ -51,19 +51,17 @@ body {
   background-image: url("https://argon-one.vercel.app/bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 98vh;
-  max-height: 800px;
+  background-position: top;
+  max-height: 820px;
 }
 
-@media only screen and (max-width: 816px) {
-  .wrapper {
-    background-image: none;
-  }
-}
 .gradient {
   background: linear-gradient(90deg, #7612c4 0%, #fc7070 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 979px) {
 }
