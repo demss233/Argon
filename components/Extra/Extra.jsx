@@ -1,5 +1,5 @@
 import React from "react";
-import './Extra.css'
+import "./Extra.css";
 
 const Extra = () => {
   return (
@@ -15,7 +15,7 @@ const Extra = () => {
         companies. All of our products are designed by ourselves and all have
         special codes.
       </p>
-      <a href="/products.html">
+      <a href="/products">
         <button className="shopbtn text-3xl px-10 py-3">Shop Now</button>
       </a>
     </div>

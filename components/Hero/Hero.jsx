@@ -21,10 +21,11 @@ const Hero = () => {
         <div className="hero-texts flex flex-col">
           <div className="hero-header">
             <div className="header-p">
-              <p>The Best in the game</p>
+              <p>The Best in the Game</p>
             </div>
             <h1 className="text-7xl font-bold">
-              WELCOME TO <br/><span className="gradient">ARGON SOFTWARE</span>
+              WELCOME TO <br />
+              <span className="gradient">ARGON SOFTWARE</span>
             </h1>
           </div>
           <div className="hero-para">
@@ -35,7 +36,14 @@ const Hero = () => {
             </p>
           </div>
           <div className="hero-buttons text-white flex gap-7">
-            <button className="discord">Discord</button>
+            <button
+              className="discord"
+              onClick={() => {
+                window.open("https://discord.gg/6QhdZVXKe");
+              }}
+            >
+              Discord
+            </button>
             <button
               className="shop-now"
               onClick={() => {

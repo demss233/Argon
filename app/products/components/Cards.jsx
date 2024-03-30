@@ -24,7 +24,7 @@ const Cards = () => {
     <>
       <div className="cards flex mx-auto" data-aos="zoom-in">
         <div className="card flex flex-col">
-          <div className="product-availability">In Development</div>
+          <div className="product-availability">In Stock</div>
           <div className="product-image">
             <img src="https://argon-one.vercel.app/image 7.webp" alt="" />
           </div>
@@ -49,7 +49,7 @@ const Cards = () => {
           </div>
         </div>
         <div className="card flex flex-col">
-          <div className="product-availability">In Stock</div>
+          <div className="product-availability">In Development</div>
           <div className="product-image">
             <img src="https://argon-one.vercel.app/image 8.webp" alt="" />
           </div>
@@ -66,8 +66,13 @@ const Cards = () => {
             </p>
           </div>
           <div className="card-buy flex justify-between items-center w-full">
-            <h1 className="price">€ 6.99</h1>
-            <button className="buy-card" onClick={redirectToProduct2}>
+            <h1 className="price">€ 4.99</h1>
+            <button
+              className="buy-card"
+              onClick={() => {
+                alert("This product is under development");
+              }}
+            >
               Purchase
             </button>
           </div>
