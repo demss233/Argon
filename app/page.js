@@ -9,15 +9,8 @@ import FAQ from "@/components/FAQ/FAQ";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Extra from "@/components/Extra/Extra";
-import LocomotiveScroll from "locomotive-scroll";
 
 export default function App() {
-  useEffect(() => {
-    const scroll = new LocomotiveScroll();
-    scroll.scrollTo(document.querySelector('.wrapper'));
-
-  }, []);
-
   return (
     <div className="wrapper" data-scroll data-scroll-container>
       <Navbar />
